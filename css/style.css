@@ -41,6 +41,20 @@
 
 /* =====  GENERAL STYLE =====*/
 
+.google-maps {
+	position: relative;
+	padding-bottom: 35%; 
+	height: 200px;
+	overflow: hidden;
+}
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
 body, html {
 	height: 100%;
 	margin: 0;
