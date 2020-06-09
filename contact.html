@@ -37,6 +37,29 @@
 </head>
 
 <body>
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v7.0'
+      });
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="226405148215177">
+  </div>
   <!-- =====  LODER  ===== -->
   <div class="loder"></div>
   <div class="wrapper">
@@ -155,7 +178,7 @@
             </div>
             <div class="Hello mb_50">
               <h5 class="capitalize text-bold mb_30">Say Hello</h5>
-              <div class="address">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the </div>
+              <div class="address">Feel free for any enquiry about our or company. </div>
               <div class="email mt_20"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info.thebestgreenland@gmail.com" target="_top">info.thebestgreenland@gmail.com</a></div>
             </div>
           </div>

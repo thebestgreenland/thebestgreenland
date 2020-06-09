@@ -36,6 +36,34 @@
 </head>
 
 <body id="home">
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v7.0'
+      });
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="226405148215177">
+  </div>
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="226405148215177">
+  </div>
   <!-- =====  LODER  ===== -->
   <div class="loder"></div>
   <div class="wrapper">
@@ -170,46 +198,46 @@
         </div>
         <!-- Services  -->
         <div class="row">
-          <div class="col-md-4 col-xs-6 mb_50">
+          <div class="col-md-4  mb_50">
             <div class="service">
               <div class="icon-top"><img src="images/serviceicon/service-1.png" alt="#"></div>
               <h4 class="text-bold mtb_20">Professional Team</h4>
               <p>For both construction Engineer team  and governmental documentation issues team. </p>
             </div>
           </div>
-          <div class="col-md-4 col-xs-6 mb_50">
+          <div class="col-md-4  mb_50">
             <div class="service">
               <div class="icon-top"><img src="images/serviceicon/service-2.png" alt="#"></div>
               <h4 class="text-bold mtb_20">24/7 support</h4>
               <p>We provide 24/7 support for any enquiry with both online and personal.Feel Free to ask.</p>
             </div>
           </div>
-          <div class="col-md-4 col-xs-6 mb_50">
+          <div class="col-md-4  mb_50">
             <div class="service">
               <div class="icon-top"><img src="images/serviceicon/service-3.png" alt="#"></div>
               <h4 class="text-bold mtb_20">Affordable Price</h4>
               <p>We prioritize fair price which are affordable by normal people with high quality.</p>
             </div>
           </div>
-          <div class="col-md-4 col-xs-6 mb_50">
+          <div class="col-md-4  mb_50">
             <div class="service">
               <div class="icon-top"><img src="images/serviceicon/service-4.png" alt="#"></div>
               <h4 class="text-bold mtb_20">Construction </h4>
-              <p>It is a long established fact that reader distracted by the readable content of a page when looking at its layout.</p>
+              <p>We build strong and quality buildings with Pile Foundation for your safety.</p>
             </div>
           </div>
-          <div class="col-md-4 col-xs-6 mb_50">
+          <div class="col-md-4  mb_50">
             <div class="service">
               <div class="icon-top"><img src="images/serviceicon/service-5.png" alt="#"></div>
               <h4 class="text-bold mtb_20">Building </h4>
-              <p>It is a long established fact that reader distracted by the readable content of a page when looking at its layout.</p>
+              <p>We build strong and quality buildings with Pile Foundation for your safety.</p>
             </div>
           </div>
-          <div class="col-md-4 col-xs-6 mb_50">
+          <div class="col-md-4  mb_50">
             <div class="service">
               <div class="icon-top"><img src="images/serviceicon/service-6.png" alt="#"></div>
               <h4 class="text-bold mtb_20">Engineering</h4>
-              <p>It is a long established fact that reader distracted by the readable content of a page when looking at its layout.</p>
+              <p>We use latest technology with our qualified engineers.</p>
             </div>
           </div>
         </div>
