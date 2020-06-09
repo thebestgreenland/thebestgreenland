@@ -37,6 +37,23 @@
 </head>
 
 <body>
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v7.0'
+      });
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   <!-- =====  LODER  ===== -->
   <div class="loder"></div>
   <div class="wrapper">
@@ -101,7 +118,7 @@
         <ul class="right">
           <li><a href="index.html">Home</a></li>
           <li><a href="single_blog_image.html#">Blog</a></li>
-          <li class="active">Single Blog</li>
+          <li class="active">Offer</li>
         </ul>
     </div>
   </div>
@@ -125,12 +142,12 @@
             </p>
             </div>
             <blockquote>
-                🚏🚏ဝါဆိုမှတ်တိုင်အနီး။
-                📱📱 ဆက်သွယ်ရန် 09260108100
-                🏢🏢လိပ်စာ ->> အမှတ် (၄၉၈) ၊ အလင်းရောင် (၄) လမ်း၊ ကြည်စု ရက်ကွက်၊ ဒေါပုံမြို့နယ်။
-                ဈေးလည်းနီး၊ 🎒ကျောင်းလည်းနီး၊ 🚏ကားမှတ်တိုင်လည်းနီး။
-                ညာဘက်မှာ ဆိုရင်တော့ Japan တံတား မင်္ဂလာဈေးနဲ့ နီး။
-                ဘယ်မှာ ဆိုရင်တော့ မဟာဗန္ဓုလ တံတား။
+                🚏🚏ဝါဆိုမှတ်တိုင်အနီး။<br>
+                📱📱 ဆက်သွယ်ရန် 09260108100<br>
+                🏢🏢လိပ်စာ ->> အမှတ် (၄၉၈) ၊ အလင်းရောင် (၄) လမ်း၊ ကြည်စု ရက်ကွက်၊ ဒေါပုံမြို့နယ်။<br>
+                ဈေးလည်းနီး၊ 🎒ကျောင်းလည်းနီး၊ 🚏ကားမှတ်တိုင်လည်းနီး။<br>
+                ညာဘက်မှာ ဆိုရင်တော့ Japan တံတား မင်္ဂလာဈေးနဲ့ နီး။<br>
+                ဘယ်ဘက်မှာ ဆိုရင်တော့ မဟာဗန္ဓုလ တံတား။<br>
                 Pile Foundation 💪 ဖြင့် အခိုင်အမာ ဆောက်ထားပါသည်။
             </blockquote>          
             <div class="details mtb_20">
@@ -173,8 +190,8 @@
               <li><a href="about.html">About us</a></li>
               <li><a href="portfolio_2col_grid.html">Projects</a></li>
               <li><a href="blog_2col_grid.html">Blog</a></li>
-              <li> <a href="team.html">Team</a></li>
-              <li><a href="pricing.html">Pricing</a></li>
+              <!-- <li> <a href="team.html">Team</a></li>
+              <li><a href="pricing.html">Pricing</a></li> -->
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
