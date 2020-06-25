@@ -185,24 +185,11 @@
           <div class="col-md-8 col-xs-12 contact-form mb_50">
             <!-- Contact FORM -->
             <div id="contact_form">
-              <form id="contact_body" method="post" action="contact_me.php">
-                <!--                                <label class="full-with-form" ><span>Name</span></label>
--->
+              <form id="contact_body" method="POST" action="https://formspree.io/mlepwgjp">
+                      <!-- <label class="full-with-form" ><span>Name</span></label> -->
                 <input class="full-with-form " type="text" name="name" placeholder="Name" data-required="true" />
-                <!--                <label class="full-with-form" ><span>Email Address</span></label>
--->
-                <input class="full-with-form  mt_30" type="email" name="email" placeholder="Email Address" data-required="true" />
-                <!--                <label class="full-with-form" ><span>Phone Number</span></label>
--->
+                <input class="full-with-form  mt_30" type="email" name="_replyto" placeholder="Email Address" data-required="true" />
                 <input class="full-with-form  mt_30" type="text" name="phone1" placeholder="Phone Number" maxlength="15" data-required="true" />
-                <!--                <label class="full-with-form" ><span>Subject</span></label>
--->
-                <input class="full-with-form  mt_30" type="text" name="subject" placeholder="Subject" data-required="true">
-                <!--                                <label class="full-with-form" ><span>Attachment</span></label>
--->
-                <input class="full-with-form  mt_30" type="file" name="file_attach[]" />
-                <!--                                <label class="full-with-form" ><span>Message</span></label>
--->
                 <textarea class="full-with-form  mt_30" name="message" placeholder="Message" data-required="true"></textarea>
                 <button type="submit" class="custom-btn btn-12 mt_30 wow fadeInUp" data-wow-delay=".4s">Send Message</button>
               </form>
