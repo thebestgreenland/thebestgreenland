@@ -39,6 +39,7 @@
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
   <script>
+
     window.fbAsyncInit = function() {
       FB.init({
         xfbml            : true,
@@ -335,7 +336,7 @@
                   </div>      
                 </a> 
               </div>
-              <div class="grid-item listing-effect illustration Construction"> <a href="images/Site2_pic1.jpg" title="Dawpon Site - 02"> <img src="images/Site2_pic1.jpg" alt="Green Land">
+              <div class="grid-item listing-effect illustration Construction"> <a href="pj498_detail" title="Dawpon Site - 02"> <img src="images/Site2_pic1.jpg" alt="Green Land">
               <div class="work-detail">
                 <h3 class="project-title mb_10">Dawpon Site - 02</h3>
                 <div class="meta-title">No(498),Ah Lin Yaung Street 4,Dowpon Tsp.</div>
@@ -343,12 +344,18 @@
               </a> 
             </div>
              
-              <div class="grid-item listing-effect VectorDesign"> <a href="images/Site3_pic3.jpg" title="Portfolio Title -4"> <img src="images/Site3_pic3.jpg" alt="Green Land">
+              <div class="grid-item listing-effect VectorDesign"> <a href="pj516_detail.html" title="Portfolio Title -4"> <img src="images/Site3_pic3.jpg" alt="Green Land">
               <div class="work-detail">
                 <h3 class="project-title mb_10">Dawpon Site - 03</h3>
                 <div class="meta-title">No(516),Ah Lin Yaung Street 4,Dowpon Tsp.</div>
               </div>
               </a> </div>
+              <div class="grid-item listing-effect"> <a href="images/Site4.jpg" title="Dawpon Site -04"> <img src="images/Site4.jpg" alt="Civil Engineer">
+                <div class="work-detail">
+                  <h3 class="project-title mb_10">No(68),ဗိုလ်ချုပ်အဆောင်ဆန်းလမ်း, ဆေးစက်ရပ်ကွက်, Dawpon Tsp.</h3>
+                  <div class="meta-title">Construction Work</div>
+                </div>
+                </a> </div>
               
             </div>
             <button type="button" class="custom-btn btn-12 mt_30 wow fadeInUp" data-wow-delay=".4s">View More Portfolio</button>
@@ -413,7 +420,7 @@
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
-            <div class="copyright-part mtb_10">Green Land@ 2020 All Rights Reserved</div>
+            <div class="copyright-part mtb_10">Green Land @ <span id="year"></span> All Rights Reserved</div>
             <div class="social_icon">
               <ul>
                 <li><a href="https://www.facebook.com/thebestgreenland"><i class="fa fa-facebook"></i></a></li>
@@ -447,6 +454,8 @@
 
 
   <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+
   $("html").easeScroll();
   // Add scrollspy to <body>
   $('body').scrollspy({ target: '#menu' })
